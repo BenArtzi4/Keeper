@@ -7,6 +7,7 @@ import CreateArea from "./CreateArea";
 function App() {
   const [notes, setNotes] = useState([]);
 
+  // Add a new note to the notes state
   function addNote(newNote) {
     setNotes((prevNotes) => {
       return [...prevNotes, newNote];
@@ -16,6 +17,7 @@ function App() {
   function deleteNote(id) {
     setNotes((prevNotes) => {
       return prevNotes.filter((noteItem, index) => {
+        // Remove a note from the notes state based on ID
         return index !== id;
       });
     });

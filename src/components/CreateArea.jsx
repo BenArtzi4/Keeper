@@ -6,6 +6,7 @@ function CreateArea(props) {
     content: "",
   });
 
+  // Handle input changes and update the note state
   function handleChange(event) {
     const { name, value } = event.target;
 
@@ -18,6 +19,7 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
+    // Call the onAdd function passed from parent component
     props.onAdd(note);
     setNote({
       title: "",
