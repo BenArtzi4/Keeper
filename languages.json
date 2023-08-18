@@ -1,0 +1,5 @@
+{
+  "name": "React",
+  "color": "#27ae60",
+  "files": ["*.js", "*.tsx"]
+}
